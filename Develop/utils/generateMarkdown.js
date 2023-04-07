@@ -61,7 +61,9 @@ ${renderLicenseSection(data.license)}
 ## Questions
 
   * If there are any questions, feel free to contact my email at: ${data.email}
-  * You can also find me on GitHub at: [${data.github}](https://github.com/${data.github})
+  * You can also find me on GitHub at: [${data.github}](https://github.com/${
+    data.github
+  })
 ##  Video Walkthrough:
 Please find the attached link of walkthrough video demonstrating the functionality of this application:
 
