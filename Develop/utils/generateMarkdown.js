@@ -24,8 +24,9 @@ function renderLicenseSection(license) {
   if (!license) {
     return " ";
   } else {
-    return `This project is covered under the ${license} license. `
-    
+    return `This project is covered under the [${license}](${renderLicenseLink(
+      license
+    )}) license.`;
   }
 }
 
@@ -40,26 +41,29 @@ function generateMarkdown(data) {
   *  [Usage](#usage)
   *  [Contributing](#contributing)
   *  [Tests](#tests)
-  *  [Questions](#questions)
   *  [License](#license)
+  *  [Questions](#questions)
+  *  [Video Walkthrough](#Video-Walkthrough)
 
-### Description:
+
+## Description:
 ${data.description}
-### Installation:
+## Installation:
 ${data.installation}
-### Usage:
+## Usage:
 ${data.usage}
-### Contributing:
+## Contributing:
 ${data.contributing}
-### Tests:
+## Tests:
 ${data.tests}
-### Questions
- Have questions about this project?  
-  * GitHub: https://github.com/${data.github}  
-  * Email: ${data.email}
+## License
+${renderLicenseSection(data.license)}
+## Questions
 
-### License
-${renderLicenseSection(data.license)}[${data.license}](${renderLicenseLink(data.license)})
+  * If there are any questions, feel free to contact my email at: ${data.email}
+  * You can also find me on GitHub at: [${data.github}](https://github.com/${data.github})
+##  Video Walkthrough:
+Please find the attached link of walkthrough video demonstrating the functionality of this application:
 
 `;
 }

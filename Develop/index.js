@@ -4,52 +4,60 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 // TODO: Create an array of questions for user input
 const questions = [
+  // Question #1 - Project Title
   {
     name: "title",
-    message: "Project title ?",
+    message: "Enter your project's title:",
     type: "input",
   },
+  // Question #2 - Project Description
   {
     name: "description",
     type: "input",
-    message: "Project description ?",
+    message: "Enter a brief description of your project:",
   },
+  // Question #3 - Installation
   {
     name: "installation",
     type: "input",
-    message: "Installation instructions?",
+    message: "Enter installation instructions for your project:",
   },
-
+  // Question #4 - Usage
   {
     name: "usage",
     type: "input",
-    message: "Project usage:",
+    message: "Enter usage information for your project:",
   },
+  // Question #5 - Contribution
   {
     name: "contributing",
     type: "input",
-    message: "Contribution info?",
+    message: "Enter your contribution guidelines for this project:",
   },
-  {
-    name: "license",
-    type: "checkbox",
-    message: "Which License is it using?",
-    choices: ["ISC", "MIT", "APACHE"],
-  },
-  {
-    name: "email",
-    type: "input",
-    message: "Your email address?",
-  },
-  {
-    name: "github",
-    type: "input",
-    message: "Provide github username?",
-  },
+  // Question #6 - Test
   {
     name: "tests",
     type: "input",
-    message: "Please provide how you will run your test?",
+    message: "Enter your testing guidelines for this project:",
+  },
+  // Question #7 - Software License
+  {
+    name: "license",
+    type: "checkbox",
+    message: "Choose a software license for this project:",
+    choices: ["ISC", "MIT", "APACHE", "GPL"],
+  },
+  // Question #8 - Github Username
+  {
+    name: "github",
+    type: "input",
+    message: "Enter your github username:",
+  },
+  // Question #9 - Email
+  {
+    name: "email",
+    type: "input",
+    message: "Enter your email address:",
   },
 ];
 
@@ -67,7 +75,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(data);
-    writeToFile("readme.md", generateMarkdown(data));
+    writeToFile("README.md", generateMarkdown(data));
   });
 }
 
