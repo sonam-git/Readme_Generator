@@ -32,3 +32,7 @@ This project is covered under the [MIT](https://opensource.org/licenses/MIT) lic
 ##  Video Walkthrough:
 Please find the attached link of walkthrough video demonstrating the functionality of this application:
 
+[Click here to watch the Demo](https://user-images.githubusercontent.com/89502092/230520362-2313394d-36b8-4d28-8ac8-440c569c014f.mp4)
+
+
+
