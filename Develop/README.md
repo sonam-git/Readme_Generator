@@ -22,7 +22,7 @@ To use the README generator run: "Node index.js" in the terminal, and answer the
 ## Contributing:
 The main purpose of this repository is to create a readme file quick and consistent. I would be grateful to the community for contributing more questions and improvement for this readme-generator as per desired. Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Tests:
-Please make sure to update tests as appropriate/ npm test
+Please make sure to update tests as appropriate/ npm test.
 ## License
 This project is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 ## Questions
